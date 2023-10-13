@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		744E19D62AD83B7000F977FD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744E19D52AD83B7000F977FD /* Service.swift */; };
+		74B73E262AD85C300079B2AF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B73E252AD85C300079B2AF /* SearchViewController.swift */; };
 		74F84F3E2AD7838800E29714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F84F3D2AD7838800E29714 /* AppDelegate.swift */; };
 		74F84F402AD7838800E29714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F84F3F2AD7838800E29714 /* SceneDelegate.swift */; };
 		74F84F422AD7838800E29714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F84F412AD7838800E29714 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		744E19D52AD83B7000F977FD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		74B73E252AD85C300079B2AF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		74F84F3A2AD7838800E29714 /* TripAndWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripAndWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F84F3D2AD7838800E29714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F84F3F2AD7838800E29714 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				74F84F4B2AD7838A00E29714 /* LaunchScreen.storyboard */,
 				74F84F4E2AD7838A00E29714 /* Info.plist */,
 				74F84F462AD7838800E29714 /* TripAndWeather.xcdatamodeld */,
+				744E19D52AD83B7000F977FD /* Service.swift */,
+				74B73E252AD85C300079B2AF /* SearchViewController.swift */,
 			);
 			path = TripAndWeather;
 			sourceTree = "<group>";
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B73E262AD85C300079B2AF /* SearchViewController.swift in Sources */,
 				74F84F422AD7838800E29714 /* ViewController.swift in Sources */,
 				74F84F482AD7838800E29714 /* TripAndWeather.xcdatamodeld in Sources */,
+				744E19D62AD83B7000F977FD /* Service.swift in Sources */,
 				74F84F3E2AD7838800E29714 /* AppDelegate.swift in Sources */,
 				74F84F402AD7838800E29714 /* SceneDelegate.swift in Sources */,
 			);
