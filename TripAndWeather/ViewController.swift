@@ -14,10 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func AddBtn_Pressed(_ sender: UIButton) {
-        performSegue(withIdentifier: "Show", sender: self)
-    }
+   
 }
 extension ViewController : UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate{
     func numberOfSections(in tableView: UITableView) -> Int {

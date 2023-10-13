@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		744E19D62AD83B7000F977FD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744E19D52AD83B7000F977FD /* Service.swift */; };
+		747607852AD8CF19001C6F31 /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747607842AD8CF19001C6F31 /* CitiesViewController.swift */; };
 		74B73E262AD85C300079B2AF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B73E252AD85C300079B2AF /* SearchViewController.swift */; };
 		74F84F3E2AD7838800E29714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F84F3D2AD7838800E29714 /* AppDelegate.swift */; };
 		74F84F402AD7838800E29714 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F84F3F2AD7838800E29714 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		744E19D52AD83B7000F977FD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		747607842AD8CF19001C6F31 /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		74B73E252AD85C300079B2AF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		74F84F3A2AD7838800E29714 /* TripAndWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripAndWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F84F3D2AD7838800E29714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				74F84F462AD7838800E29714 /* TripAndWeather.xcdatamodeld */,
 				744E19D52AD83B7000F977FD /* Service.swift */,
 				74B73E252AD85C300079B2AF /* SearchViewController.swift */,
+				747607842AD8CF19001C6F31 /* CitiesViewController.swift */,
 			);
 			path = TripAndWeather;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				74F84F482AD7838800E29714 /* TripAndWeather.xcdatamodeld in Sources */,
 				744E19D62AD83B7000F977FD /* Service.swift in Sources */,
 				74F84F3E2AD7838800E29714 /* AppDelegate.swift in Sources */,
+				747607852AD8CF19001C6F31 /* CitiesViewController.swift in Sources */,
 				74F84F402AD7838800E29714 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

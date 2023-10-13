@@ -71,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="IHZ-xl-kVQ">
-                                <rect key="frame" x="2" y="226" width="390.33333333333331" height="371"/>
+                                <rect key="frame" x="2" y="226" width="356" height="371"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c05-Bb-QV1">
                                         <rect key="frame" x="0.0" y="0.0" width="32" height="28.666666666666668"/>
@@ -92,11 +92,6 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgM-qw-gni">
-                                        <rect key="frame" x="356" y="0.0" width="34.333333333333314" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="+"/>
-                                    </button>
                                 </subviews>
                             </stackView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAf-V0-Lm1">
@@ -118,22 +113,23 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="oUZ-lK-Xa0" kind="showDetail" identifier="" id="tHP-Am-ClM"/>
+                        <outlet property="SearchBar" destination="RAf-V0-Lm1" id="GAz-gM-mIT"/>
+                        <segue destination="oUZ-lK-Xa0" kind="showDetail" identifier="DetailSearchController" id="tHP-Am-ClM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VnP-OV-uPr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1815" y="39"/>
         </scene>
-        <!--View Controller-->
+        <!--Cities View Controller-->
         <scene sceneID="2dw-LR-z0v">
             <objects>
-                <viewController id="oUZ-lK-Xa0" sceneMemberID="viewController">
+                <viewController id="oUZ-lK-Xa0" customClass="CitiesViewController" customModule="TripAndWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zy9-GM-egP">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8eV-aI-QZp">
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="8eV-aI-QZp">
                                 <rect key="frame" x="0.0" y="84" width="377" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -155,11 +151,19 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="oUZ-lK-Xa0" id="dGp-Z0-hEn"/>
+                                    <outlet property="delegate" destination="oUZ-lK-Xa0" id="i3G-4i-803"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2Mc-d9-D7O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="myTableView" destination="894-A7-oEg" id="z25-GO-gLo"/>
+                        <outlet property="searchBar" destination="8eV-aI-QZp" id="Yl9-Ta-3yT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBh-kl-bfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

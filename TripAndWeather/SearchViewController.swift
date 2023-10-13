@@ -7,39 +7,38 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
-
+class SearchViewController: UIViewController, UISearchBarDelegate {
+    
+    
+    @IBOutlet weak var SearchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        SearchBar.delegate = self
+        
         // Do any additional setup after loading the view.
         
-        Service.shared.getDataFrom(urlStr: "gd.geobytes.com/AutoCompleteCity?q=Tor&callback=?")
-        { result   in
-            switch result {
-            case .failure(let err): print("eror: \(err)")
-                
-            case .success(let xdata):
-                print(xdata)
-                let resultSet = try? JSONDecoder().decode(ResultSet.self, from: xdata)
-                
-                if let results = resultSet {
-                    DispatchQueue.main.async { [unowned self] in
-                        self.photos = results.photos
-                    }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        // Call the function to fetch data when the user types
+        // At least 3 characters starting with "Tor"
+        if searchText.count >= 3 && searchText.lowercased().hasPrefix("tor") {
+        // Call the function to perform the segue to the second view controller
+        performSegue(withIdentifier: "DetailSearchController", sender: self)
                 }
-            }
-                }
+    }
+    
+}
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
