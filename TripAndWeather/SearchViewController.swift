@@ -8,26 +8,11 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    
-    
-    
-    
-    
+  
     lazy var resultsTableController =
            self.storyboard?.instantiateViewController(withIdentifier: "SearchCityTableViewController") as? SearchCityTableViewController
-    
-    
+ 
     lazy var searchconroller = UISearchController(searchResultsController: resultsTableController)
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     @IBOutlet weak var tableView: UITableView!
     lazy var newItems = [NSManagedObject?]()
@@ -42,8 +27,6 @@ class SearchViewController: UIViewController {
           
         }
     }
-   
-     
     
     @IBOutlet weak var editStackView: UIStackView!
     @IBOutlet weak var cityName: UILabel!
