@@ -1,9 +1,3 @@
-//
-//  MyTableViewCell.swift
-//  Project_1
-//
-//  Created by SR on 2021-10-19.
-//
 
 import UIKit
 
