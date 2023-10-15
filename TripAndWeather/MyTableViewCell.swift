@@ -43,9 +43,11 @@ class MyTableViewCell: UITableViewCell {
                     DispatchQueue.main.async {
                         self.detailTextLabel?.text = weather.main.temp.description
                     }
-                    
-                  //  detailTextLabel?.text = weather.main.temp
-                  //  weather.weather?[0].icon
+
+                    let weatherFloat = weather.main.temp
+                    let weatherString = "\(weatherFloat)"
+                    detailTextLabel?.text = weatherString
+                    self.weather.weather?[0].icon
                 }
                 print("\(data)")
             }
