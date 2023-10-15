@@ -6,6 +6,9 @@
 //
 
 import UIKit
+protocol didfinishSearchDelegate : AnyObject {
+    func didFinishSearchWith(cityName : String?)
+}
 
 class CitiesViewController: UIViewController {
 
